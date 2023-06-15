@@ -14,8 +14,8 @@ export default function Search() {
         />
         <input type="text" placeholder="Search" />
       </div>
-      <img src={profileLogo} alt="profile logo" />
-      <img src={favoriteLogo} alt="favorite logo" />
+      <img className="search__img" src={profileLogo} alt="profile logo" />
+      <img className="search__img" src={favoriteLogo} alt="favorite logo" />
     </div>
   );
 }

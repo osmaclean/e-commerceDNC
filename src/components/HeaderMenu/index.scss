@@ -10,8 +10,7 @@
   align-items: center;
 
   &__logo {
-    width: 109px;
-    height: 56px;
+    width: 80px;
   }
 
   ul {
@@ -20,12 +19,39 @@
     column-gap: 48px;
     flex-grow: 1;
     padding-left: 70px;
-    font-size: 22px;
+    font-size: 1.1rem;
     line-height: 26px;
+    transition: 500ms ease;
+    cursor: pointer;
+    li {
+      &:hover {
+        opacity: 70%;
+        transition: 500ms ease;
+      }
+    }
   }
 
   &__cart-shop {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
+    cursor: pointer;
+    width: 200px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    height: 6vh;
+    transition: 500ms ease;
+    &:hover {
+      transition: 500ms ease;
+      border: 2px solid $black;
+    }
+    h1 {
+      font-size: 1.1rem;
+    }
+    img {
+      width: 24px;
+      height: 24px;
+    }
   }
 }
