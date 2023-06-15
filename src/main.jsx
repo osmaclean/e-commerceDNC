@@ -6,11 +6,12 @@ import Login from "./pages/Login/Login";
 import Home from "./pages/Home/Home";
 import Products from "./pages/Products/Products";
 import Pay from "./pages/Pay/Pay";
+import { PRODUCTS_MOCK } from "../src/mock/products.mock";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Home data={PRODUCTS_MOCK} />,
   },
   {
     path: "/home",
