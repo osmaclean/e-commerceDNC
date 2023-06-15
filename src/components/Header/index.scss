@@ -1,0 +1,11 @@
+@use '../../sass/mixins' as *;
+@use '../../sass/variables' as *;
+
+.header {
+  width: 100%;
+  background-color: $header-bg;
+  padding: 1rem;
+  &__img {
+    width: 80px;
+  }
+}

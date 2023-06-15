@@ -10,11 +10,11 @@ import Pay from "./pages/Pay/Pay";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Login />,
+    element: <Home />,
   },
   {
     path: "/home",
-    element: <Home />,
+    element: <Login />,
   },
   {
     path: "/products/:productID",
