@@ -1,5 +1,10 @@
+import Header from "../../components/Header/Header";
 import "./index.scss";
 
 export default function Pay() {
-  return <div>Pay</div>;
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 }
