@@ -19,11 +19,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/products/:productID",
-    element: <Products />,
+    element: <Products data={PRODUCTS_MOCK} />,
   },
   {
-    path: "/pay",
-    element: <Pay />,
+    path: "/pay/pay:ID",
+    element: <Pay data={PRODUCTS_MOCK} />,
   },
 ]);
 
