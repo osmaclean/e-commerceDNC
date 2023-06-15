@@ -5,6 +5,7 @@
   padding-top: 52px;
   padding-bottom: 96px;
   display: flex;
+  align-items: center;
   column-gap: 35px;
   justify-content: center;
   &__input-container {
@@ -14,10 +15,10 @@
   &__search-logo {
     position: absolute;
     left: 10px;
+    cursor: pointer;
     top: 50%;
     transform: translateY(-50%);
     font-size: 18px;
-    color: gray;
   }
 
   input {
@@ -25,6 +26,20 @@
     height: 48px;
     width: 1096px;
     border-radius: 10px;
+    color: $black;
     border: 1px solid $border-input-color;
+    font-size: 1rem;
+    
+  }
+  &__img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: 500ms ease;
+    &:hover {
+      opacity: 70%;
+      transition: 500ms ease;
+      transform: scale(1.1);
+    }
   }
 }

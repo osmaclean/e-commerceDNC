@@ -8,6 +8,10 @@ export default function Home() {
     <div className="home">
       <HeaderMenu />
       <Search />
+      {/* <div className="home__products" > => (
+          <ProductsCard key={product.id} data={product} />
+        ))}
+      </div> */}
     </div>
   );
 }
