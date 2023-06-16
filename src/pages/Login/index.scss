@@ -62,9 +62,11 @@
     font-size: 18px;
     font-weight: 800;
     line-height: 21px;
+    cursor: pointer;
   }
-
+  
   a {
+    cursor: pointer;
     text-decoration: none;
     color: $white;
   }
