@@ -2,13 +2,13 @@
 @use "../../sass/variables" as *;
 
 .login {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   &__form {
-    margin-top: 10rem;
+    width: 39%;
+    margin-top: 3rem;
     text-align: center;
   }
 
@@ -31,7 +31,7 @@
   }
 
   &__input-wrapper {
-    max-width: 524px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     row-gap: 12px;
@@ -44,16 +44,21 @@
 
   input {
     height: 52px;
-    padding: 18px 13px;
+    padding: 1rem;
+    font-size: .9rem;
     border: 2px solid $border-input-color;
     border-radius: 10px;
     width: 100%;
+    outline: none;
+    &:focus {
+      border: 2px solid $contrast-color;
+    }
   }
 
   button {
-    width: 524px;
+    width: 100%;
     margin-right: 10px;
-    border: none;
+    border: 2px solid $contrast-color;
     background-color: $contrast-color;
     border-radius: 6px;
     padding: 13px;
@@ -63,11 +68,445 @@
     font-weight: 800;
     line-height: 21px;
     cursor: pointer;
+    color: $white;
+    transition: 500ms ease;
+    &:hover {
+      transition: 500ms ease;
+      color: $contrast-color;
+      background-color: transparent;
+    }
   }
   
   a {
     cursor: pointer;
     text-decoration: none;
     color: $white;
+  }
+}
+
+@media (max-width: 1370px) {
+  .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    &__form {
+      width: 45%;
+      margin-top: 3rem;
+      text-align: center;
+    }
+  
+    h1 {
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 35px;
+    }
+  
+    h2 {
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 26px;
+    }
+  
+    label {
+      text-align: left;
+      font-size: 20px;
+      line-height: 23px;
+    }
+  
+    &__input-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 12px;
+      margin-top: 84px;
+    }
+  
+    &__input-name {
+      margin-bottom: 19px;
+    }
+  
+    input {
+      height: 52px;
+      padding: 1rem;
+      font-size: .9rem;
+      border: 2px solid $border-input-color;
+      border-radius: 10px;
+      width: 100%;
+      outline: none;
+      &:focus {
+        border: 2px solid $contrast-color;
+      }
+    }
+  
+    button {
+      width: 100%;
+      margin-right: 10px;
+      border: 2px solid $contrast-color;
+      background-color: $contrast-color;
+      border-radius: 6px;
+      padding: 13px;
+      margin-top: 66px;
+      margin-bottom: 200px;
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 21px;
+      cursor: pointer;
+      color: $white;
+      transition: 500ms ease;
+      &:hover {
+        transition: 500ms ease;
+        color: $contrast-color;
+        background-color: transparent;
+      }
+    }
+    
+    a {
+      cursor: pointer;
+      text-decoration: none;
+      color: $white;
+    }
+  }
+}
+
+@media (max-width: 1190px) {
+  .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    &__form {
+      width: 55%;
+      margin-top: 3rem;
+      text-align: center;
+    }
+  
+    h1 {
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 35px;
+    }
+  
+    h2 {
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 26px;
+    }
+  
+    label {
+      text-align: left;
+      font-size: 20px;
+      line-height: 23px;
+    }
+  
+    &__input-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 12px;
+      margin-top: 84px;
+    }
+  
+    &__input-name {
+      margin-bottom: 19px;
+    }
+  
+    input {
+      height: 52px;
+      padding: 1rem;
+      font-size: .9rem;
+      border: 2px solid $border-input-color;
+      border-radius: 10px;
+      width: 100%;
+      outline: none;
+      &:focus {
+        border: 2px solid $contrast-color;
+      }
+    }
+  
+    button {
+      width: 100%;
+      margin-right: 10px;
+      border: 2px solid $contrast-color;
+      background-color: $contrast-color;
+      border-radius: 6px;
+      padding: 13px;
+      margin-top: 66px;
+      margin-bottom: 200px;
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 21px;
+      cursor: pointer;
+      color: $white;
+      transition: 500ms ease;
+      &:hover {
+        transition: 500ms ease;
+        color: $contrast-color;
+        background-color: transparent;
+      }
+    }
+    
+    a {
+      cursor: pointer;
+      text-decoration: none;
+      color: $white;
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    &__form {
+      padding: 1rem;
+      width: 75%;
+      margin-top: 3rem;
+      text-align: center;
+    }
+  
+    h1 {
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 35px;
+    }
+  
+    h2 {
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 26px;
+    }
+  
+    label {
+      text-align: left;
+      font-size: 20px;
+      line-height: 23px;
+    }
+  
+    &__input-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 12px;
+      margin-top: 84px;
+    }
+  
+    &__input-name {
+      margin-bottom: 19px;
+    }
+  
+    input {
+      height: 52px;
+      padding: 1rem;
+      font-size: .9rem;
+      border: 2px solid $border-input-color;
+      border-radius: 10px;
+      width: 100%;
+      outline: none;
+      &:focus {
+        border: 2px solid $contrast-color;
+      }
+    }
+  
+    button {
+      width: 100%;
+      margin-right: 10px;
+      border: 2px solid $contrast-color;
+      background-color: $contrast-color;
+      border-radius: 6px;
+      padding: 13px;
+      margin-top: 66px;
+      margin-bottom: 200px;
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 21px;
+      cursor: pointer;
+      color: $white;
+      transition: 500ms ease;
+      &:hover {
+        transition: 500ms ease;
+        color: $contrast-color;
+        background-color: transparent;
+      }
+    }
+    
+    a {
+      cursor: pointer;
+      text-decoration: none;
+      color: $white;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    &__form {
+      padding: 1rem;
+      width: 85%;
+      margin-top: 3rem;
+      text-align: center;
+    }
+  
+    h1 {
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 35px;
+    }
+  
+    h2 {
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 26px;
+    }
+  
+    label {
+      text-align: left;
+      font-size: 20px;
+      line-height: 23px;
+    }
+  
+    &__input-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 12px;
+      margin-top: 84px;
+    }
+  
+    &__input-name {
+      margin-bottom: 19px;
+    }
+  
+    input {
+      height: 52px;
+      padding: 1rem;
+      font-size: .9rem;
+      border: 2px solid $border-input-color;
+      border-radius: 10px;
+      width: 100%;
+      outline: none;
+      &:focus {
+        border: 2px solid $contrast-color;
+      }
+    }
+  
+    button {
+      width: 100%;
+      margin-right: 10px;
+      border: 2px solid $contrast-color;
+      background-color: $contrast-color;
+      border-radius: 6px;
+      padding: 13px;
+      margin-top: 66px;
+      margin-bottom: 200px;
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 21px;
+      cursor: pointer;
+      color: $white;
+      transition: 500ms ease;
+      &:hover {
+        transition: 500ms ease;
+        color: $contrast-color;
+        background-color: transparent;
+      }
+    }
+    
+    a {
+      cursor: pointer;
+      text-decoration: none;
+      color: $white;
+    }
+  }
+}
+@media (max-width: 670px) {
+  .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    &__form {
+      padding: 1rem;
+      width: 100%;
+      margin-top: 3rem;
+      text-align: center;
+    }
+  
+    h1 {
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 35px;
+    }
+  
+    h2 {
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 26px;
+    }
+  
+    label {
+      text-align: left;
+      font-size: 20px;
+      line-height: 23px;
+    }
+  
+    &__input-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 12px;
+      margin-top: 84px;
+    }
+  
+    &__input-name {
+      margin-bottom: 19px;
+    }
+  
+    input {
+      height: 52px;
+      padding: 1rem;
+      font-size: .9rem;
+      border: 2px solid $border-input-color;
+      border-radius: 10px;
+      width: 100%;
+      outline: none;
+      &:focus {
+        border: 2px solid $contrast-color;
+      }
+    }
+  
+    button {
+      width: 100%;
+      margin-right: 10px;
+      border: 2px solid $contrast-color;
+      background-color: $contrast-color;
+      border-radius: 6px;
+      padding: 13px;
+      margin-top: 66px;
+      margin-bottom: 200px;
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 21px;
+      cursor: pointer;
+      color: $white;
+      transition: 500ms ease;
+      &:hover {
+        transition: 500ms ease;
+        color: $contrast-color;
+        background-color: transparent;
+      }
+    }
+    
+    a {
+      cursor: pointer;
+      text-decoration: none;
+      color: $white;
+    }
   }
 }

@@ -26,9 +26,9 @@ export default function Login() {
             placeholder="********"
           />
         </div>
-        <button type="submit">
-          <Link to={"/home"}>Entrar</Link>
-        </button>
+        <Link to={"/home"}>
+          <button type="submit">Entrar</button>
+        </Link>
       </form>
     </section>
   );
