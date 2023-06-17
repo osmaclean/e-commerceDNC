@@ -8,9 +8,9 @@ export default function ProductsCard({ data }) {
       <div className="home__card-description">
         <p>{data.title}</p>
         <span>{`R$ ` + data.price}</span>
-        <button>
-          <Link to={`/products/${data.id}`}>Comprar Look</Link>
-        </button>
+        <Link to={`/products/${data.id}`}>
+          <button>Comprar Look</button>
+        </Link>
       </div>
     </div>
   );
