@@ -12,13 +12,19 @@ export default function Login() {
         <div className="login__input-wrapper">
           <label htmlFor="name">Digite seu CPF:</label>
           <input
+            autoComplete="off"
             type="text"
             placeholder="Nome completo"
             id="name"
             className="login__input-name"
           />
           <label htmlFor="password">Senha:</label>
-          <input type="password" id="password" placeholder="********" />
+          <input
+            autoComplete="off"
+            type="password"
+            id="password"
+            placeholder="********"
+          />
         </div>
         <button type="submit">
           <Link to={"/home"}>Entrar</Link>

@@ -5,7 +5,7 @@ export const PRODUCTS_MOCK = [
     imgPathDetail: '../../../public/product-1.png',
     title: 'Cropped manga curta',
     price: 139.9,
-    color: ['Black'],
+    colors: ['Black'],
     sizes: ['p', 'm', 'g', 'gg']
   },
   {
@@ -14,7 +14,7 @@ export const PRODUCTS_MOCK = [
     imgPathDetail: '../../../public/product-2.png',
     title: 'Blazer',
     price: 109.9,
-    color: ['Black', 'Red'],
+    colors: ['Black', 'Red'],
     sizes: ['p', 'm', 'g']
   },
   {
@@ -23,7 +23,7 @@ export const PRODUCTS_MOCK = [
     imgPathDetail: '../../../public/product-3.png',
     title: 'Blazer',
     price: 159.9,
-    color: ['Red', 'Green'],
+    colors: ['Red', 'Green'],
     sizes: ['p', 'm', 'g', 'gg']
   },
   {
@@ -32,7 +32,7 @@ export const PRODUCTS_MOCK = [
     imgPathDetail: '../../../public/product-4.png',
     title: 'Cropped',
     price: 189.9,
-    color: ['Black', 'White', 'Blue'],
+    colors: ['Black', 'White', 'Blue'],
     sizes: ['p', 'm', 'gg']
   },
   {
@@ -41,7 +41,7 @@ export const PRODUCTS_MOCK = [
     imgPathDetail: '../../../public/product-5.png',
     title: 'Camisa Masculina',
     price: 79.9,
-    color: ['White', 'Black'],
+    colors: ['White', 'Black'],
     sizes: ['g', 'gg']
   },
   {
@@ -50,7 +50,7 @@ export const PRODUCTS_MOCK = [
     imgPathDetail: '../../../public/product-6.png',
     title: 'Camisa Manga Longa',
     price: 119.9,
-    color: ['Black'],
+    colors: ['Black'],
     sizes: ['p', 'm']
   },
 ];
