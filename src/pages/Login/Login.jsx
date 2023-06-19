@@ -14,7 +14,7 @@ export default function Login() {
           <input
             autoComplete="off"
             type="text"
-            placeholder="Nome completo"
+            placeholder="Digite seu CPF..."
             id="name"
             className="login__input-name"
           />
